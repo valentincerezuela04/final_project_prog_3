@@ -5,4 +5,4 @@ Puedes ver el [diagrama del proyecto final en Lucidchart](https://lucid.app/luci
 
 ## 📌 Seguimiento del Proyecto en Jira
 
-Accede al [tablero del proyecto en Jira](https://tujira.atlassian.net/jira/software/projects/PROY/boards/1) para ver tareas, avances y gestión de sprints.
+Accede al [tablero del proyecto en Jira](https://valentincerezuela04.atlassian.net/jira/software/projects/SCRUM/boards/1) para ver tareas, avances y gestión de sprints.
