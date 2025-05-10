@@ -1,4 +1,4 @@
-package com.musicreviewapp.music_review_app;
+package com.musicreviewapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
