@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.30</version> <!-- última versión estable al momento -->
+			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -65,23 +65,23 @@
 			<artifactId>postgresql</artifactId>
 		</dependency>
 
-		<!-- Dependencia para Hibernate Validator -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-validator</artifactId>
-			<version>6.2.0.Final</version> <!-- Reemplaza con la última versión disponible -->
+			<version>6.2.0.Final</version>
 		</dependency>
-		<!-- Dependencia para la API de Bean Validation (JSR 303) -->
+
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>2.0.1.Final</version> <!-- Reemplaza con la última versión disponible -->
+			<version>2.0.1.Final</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
+
 
 	</dependencies>
 

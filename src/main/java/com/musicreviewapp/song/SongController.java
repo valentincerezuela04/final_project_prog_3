@@ -39,6 +39,7 @@ public class SongController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Song addSong(@RequestBody Song song){
+        System.out.println("Saving song: " + song);
         return songService.save(song);
     }
 
