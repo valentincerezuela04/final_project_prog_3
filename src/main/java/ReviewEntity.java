@@ -30,7 +30,8 @@ public class ReviewEntity {
     @Column(name = "rating",nullable = true,precision = 2,scale = 1,columnDefinition = "DECIMAL(2,1) DEFAULT 5.0")
     /// scale indica el numero de decimales
     /// precision indica que el maximo de digitos en total es 2
-    /// Si no se agrega un rating, el default es 5.0
+    /// Si no se agrega un rating, el default es 5.0h
+
     private Double rating;
 
     @Column(name = "description",nullable = true)
