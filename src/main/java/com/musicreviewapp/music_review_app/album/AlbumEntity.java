@@ -17,7 +17,7 @@ import java.util.Date;
 public class AlbumEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long albumId;
 
     @Column(name = "spotify_id")
     private String spotifyId;
