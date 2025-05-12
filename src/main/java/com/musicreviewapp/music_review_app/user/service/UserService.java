@@ -4,9 +4,15 @@ import com.musicreviewapp.music_review_app.user.dto.SignupRequest;
 import com.musicreviewapp.music_review_app.user.dto.UserResponse;
 import com.musicreviewapp.music_review_app.user.mapper.UserMapper;
 import com.musicreviewapp.music_review_app.user.model.Credential;
+<<<<<<< Updated upstream
 import com.musicreviewapp.music_review_app.user.model.ERole;
 import com.musicreviewapp.music_review_app.user.model.User;
 import com.musicreviewapp.music_review_app.user.repositories.UserRepository;
+=======
+import com.musicreviewapp.music_review_app.user.enums.ERole;
+import com.musicreviewapp.music_review_app.user.model.User;
+import com.musicreviewapp.music_review_app.user.repository.UserRepository;
+>>>>>>> Stashed changes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
