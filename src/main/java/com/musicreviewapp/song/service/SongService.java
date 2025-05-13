@@ -31,30 +31,6 @@ public class SongService {
         return songRepository.save(song);
     }
 
-    public Song saveOrUpdate(Song song) {
-        Optional<Song> existingSong = songRepository.findBySpotifyId(song.getSpotifyId());
-
-        if (existingSong.isPresent()) {
-            Song updatedSong = existingSong.get();
-            updatedSong.setName(song.getName());
-            updatedSong.setArtistName(song.getArtistName());
-            updatedSong.setAlbum(song.getAlbum());
-            updatedSong.setImageUrl(song.getImageUrl());
-            updatedSong.setDurationMs(song.getDurationMs());
-            updatedSong.setPreviewUrl(song.getPreviewUrl());
-            updatedSong.setSpotifyLink(song.getSpotifyLink());
-            updatedSong.setReleaseDate(song.getReleaseDate());
-
-            return songRepository.save(updatedSong);
-        } else {
-            return songRepository.save(song);
-        }
-    }
-
-    public void deleteById(Long id) {
-        songRepository.deleteById(id);
-    }
-
     public List<Song> search(String query) {
         return songRepository.findByNameContainingIgnoreCaseOrArtistNameContainingIgnoreCase(query, query);
     }

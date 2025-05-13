@@ -48,25 +48,6 @@ public class SongController {
         return new ResponseEntity<>(songMapper.toResponse(savedSong), HttpStatus.CREATED);
     }
 
-    @PutMapping("/songs/{id}")
-    public ResponseEntity<SongResponse> updateSong(@PathVariable Long id, @RequestBody Song song) {
-        Optional<Song> existingSong = songService.findById(id);
-
-        if (existingSong.isPresent()) {
-            song.setId(id);
-            Song updatedSong = songService.save(song);
-            return ResponseEntity.ok(songMapper.toResponse(updatedSong));
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-    }
-
-    @DeleteMapping("/songs/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteSong(@PathVariable Long id) {
-        songService.deleteById(id);
-    }
-
     @GetMapping("/songs/search")
     public ResponseEntity<List<SongResponse>> searchSongs(@RequestParam String query) {
         List<Song> songs = songService.search(query);
